@@ -1,6 +1,9 @@
 '''
 Created user class
 '''
+from typing_extensions import Self
+
+
 class user:
 
     # store the users
@@ -15,3 +18,10 @@ class user:
         '''
         self.username = username
         self.password = password
+
+
+    '''
+    function to save the user in user_list
+    '''
+    def save_user(self):
+        user.user_list.append(self)
