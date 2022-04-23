@@ -2,6 +2,10 @@
 Created user class
 '''
 class user:
+
+    # store the users
+
+    user_list = []
     '''
     created new instance of a class and have passed in properties of the object
     '''
