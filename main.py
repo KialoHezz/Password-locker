@@ -60,7 +60,7 @@ def main ():
         if short_code == "ca":
             print("Create new account:")
             username = input("Enter your username ")
-            password = int(input("Your password:"))
+            password = input("Your password:")
             save_user(create_user(username,password))
 
             print(f'New account for : {username}  created successfully ')
