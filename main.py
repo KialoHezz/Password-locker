@@ -1,7 +1,7 @@
 #! /usr/bin/env python3.9
 
 from user_class import user
-from credetial_class import credential
+from credential_class import credential
 
 
 def create_user(username, password):
@@ -64,43 +64,43 @@ def main ():
 
             print(f'New account for : {username}  created successfully ')
         
-        elif short_code == "LI":
-            print("Loging into existing account to our system:")
+        # elif short_code == "LI":
+        #     print("Loging into existing account to our system:")
 
-            username = input('Enter your first name - ')
-            password = int(input('Enter your password - '))
+        #     username = input('Enter your first name - ')
+        #     password = int(input('Enter your password - '))
 
-            user_exists = verify_user(username,password)
+        #     user_exists = verify_user(username,password)
 
-            if user_exists == username:
-                print(f'Welcome {username}. Please choose an option to continue.')
+        #     if user_exists == username:
+        #         print(f'Welcome {username}. Please choose an option to continue.')
 
-                while True:
-                    print('Use these codes to navigate: \n CA-Create an Account \n  CC- copy \n EX -Exit')
-                    short_code = input('Enter your choice:').lower()
+        #         while True:
+        #             print('Use these codes to navigate: \n CA-Create an Account \n  CC- copy \n EX -Exit')
+        #             short_code = input('Enter your choice:').lower()
 
-                    if short_code == 'EX':
-                        print(f'Goodbye {username}')
+        #             if short_code == 'EX':
+        #                 print(f'Goodbye {username}')
 					
-                    elif short_code  == 'CC':
-                        print('Enter your credential details:')
+        #             elif short_code  == 'CC':
+        #                 print('Enter your credential details:')
 
 
-                        userName = input('enter the username')
-                        siteName = input('Enter the site name- ')
-                        accountName = input('Enter your account  name - ')
+        #                 userName = input('enter the username')
+        #                 siteName = input('Enter the site name- ')
+        #                 accountName = input('Enter your account  name - ')
 
-                        save_credential(create_credential(userName,siteName,accountName,password))
-                        print(f'Credential Created: Site Name: {siteName} - Account Name: {accountName} - Password: {password}')
+        #                 save_credential(create_credential(userName,siteName,accountName,password))
+        #                 print(f'Credential Created: Site Name: {siteName} - Account Name: {accountName} - Password: {password}')
                     
 
-                    else:
-                        print('Oop! Wrong details entered . Try again or Creae another account' )
+        #             else:
+        #                 print('Oop! Wrong details entered . Try again or Creae another account' )
 
-                else:
-                    print("-"*60)
-                    print(' ')
-                    print('Oops! Wrong option entered. Try again.')
+        #         else:
+        #             print("-"*60)
+        #             print(' ')
+        #             print('Oops! Wrong option entered. Try again.')
 
 
 

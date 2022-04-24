@@ -7,13 +7,13 @@ class credential:
 
 	
 	@classmethod
-	def check_user(cls,first_name,password):
+	def check_user(cls,username,password):
 		'''
 		Method that checks if the name and password entered match entries in the users_list
 		'''
 		current_user = ''
 		for user in user.users_list:
-			if (user.first_name == first_name and user.password == password):
+			if (user.username == username and user.password == password):
 				current_user = user.first_name
 		return current_user
 
@@ -44,7 +44,7 @@ class credential:
 		Class method to display the list of credentials saved
 		'''
 		user_credentials_list = []
-        
+
 		for credential in cls.credentials_list:
 			if credential.user_name == user_name:
 				user_credentials_list.append(credential)

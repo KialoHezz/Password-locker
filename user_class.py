@@ -1,6 +1,3 @@
-from typing_extensions import Self
-
-
 class user:
     '''
     variable to store the users
@@ -11,7 +8,7 @@ class user:
         '''
         Instance variables as assigned username and password
         '''
-        self.username =username
+        self.username = username
         self.password = password
     
     def save_user(self):
