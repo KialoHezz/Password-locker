@@ -23,7 +23,7 @@ As a user I would like:
 ### Prerequisites
 * python3.6
 * pip
-* pyperclip
+<!-- * pyperclip -->
 * xclip
 * sheband
 
@@ -31,8 +31,8 @@ As a user I would like:
 ## Running the Application
 * To run the application, in your terminal:
 
-        $ chmod +x 
-        $ 
+        $ chmod +x main.py
+        $ ./main.py
         
 ## Testing the Application
 * To run the tests for the class file:
