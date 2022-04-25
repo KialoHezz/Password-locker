@@ -1,6 +1,6 @@
 #! /usr/bin/env python3.9
 
-from user_class import user
+from user_class import User
 from credential_class import credential
 
 
@@ -8,7 +8,7 @@ def create_user(username, password):
 	'''
 	Function to create a new user account
 	'''
-	new_user = user(username,password)
+	new_user = User(username,password)
 	return new_user
 
 def save_user(user):

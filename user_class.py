@@ -1,4 +1,4 @@
-class user:
+class User:
     '''
     variable to store the users
     '''

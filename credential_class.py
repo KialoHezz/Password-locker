@@ -1,3 +1,4 @@
+from user_class import User  
 class credential:
 	'''
 	Class to create  account credentials, generate passwords and save their information
@@ -11,6 +12,7 @@ class credential:
 		'''
 		Method that checks if the name and password entered match entries in the users_list
 		'''
+		user=User
 		current_user = ''
 		for user in user.users_list:
 			if (user.username == username and user.password == password):
