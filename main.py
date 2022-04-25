@@ -47,8 +47,15 @@ def display_credentials(userName):
 
 
 def main ():
+    print('''
+    ****************************************
+    *************PASSWORD LOCKER************
+    ****************************************
+        ''')
+
     print('Please enter your name:')
     use_name = input()
+
 
     print(f'Hello! {use_name} Welcome to password locker')
 
@@ -98,6 +105,11 @@ def main ():
                         print('Oop! Wrong details entered . Try again or Creae another account' )
 
         elif short_code == "ex":
+            print('''
+    ****************************************
+    *************PASSWORD LOCKER************
+    *****************BY -Hezron Ngoma*******
+        ''')
             print(f'Goodbye {use_name}')
 
         
